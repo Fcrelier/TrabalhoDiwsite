@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Exercicio da semana 4 </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header> 
+        <div class="navbar">
+            <div class="logo"> <a href="#"> Monsters Inc  </a></div>
+            <ul class="links">
+                <li><a href="Hero">Home</a></li>
+                <li><a href="about">about</a></li>
+                <li><a href="Contacts">Contacts</a></li>
+                <li><a href="Services">Services</a></li>
+            </ul>
+            <a href="#" class="action_btn"> Get started </a>
+            <div class="toggle_btn">
+                <i class="ph ph-list"></i>
+            </div>
+        </div>
+
+        <div class="dropdown_menu">
+                <li><a href="Hero">Home</a></li>
+                <li><a href="about">about</a></li>
+                <li><a href="Contacts">Contacts</a></li>
+                <li><a href="Services">Services</a></li>
+                <li><a href="#" class="action_btn"> Get started </a></li>
+        </div>
+        <div>
+            <div class="container">
+                 <div style="font-size: 22px; color: #1A7ECB; padding: 30px; margin-left: 120px; line-height: 80px;">
+                    <li><a style="font-size: 30px; ">Scary energy</a></li>
+                    <li><a style="font-size: 30px;">Laughter energy</a></li>
+                    <li><a style="font-size: 30px;">Green energy</a></li>
+                </div>
+                <div class="subcontainer">
+                    <div class="banner">
+                        <img src="assets/img/cleaning_crew.jpeg" width="90%" height="90%"></img>
+                        <a style="font-size: 32px; cursor: pointer; text-align: center;"> 
+                            <p>cleaning Crew: Cost $999,90</p>
+                        </a>
+                    </div> 
+                    <div class="items">
+                        <div class="item">
+                            <img src="assets/img/Sulley.png" width="100%" height="100%"></img>
+                            <a>
+                            <p style="text-align: center; background: orange; cursor: pointer; color: black"> Sully $399,90
+                            </p>
+                        </a>
+                        </div>
+                        <div class="item">
+                            <img src="assets/img/mike.jpeg" width="100%" height="100%"></img>
+                            <p style="text-align: center; background: orange; cursor: pointer; color: black"> mike $299,90</p>
+                        </div>
+                        <div class="item">
+                            <img src="assets/img/randall.jpg" width="100%" height="100%"></img>
+                            <p style="text-align: center; background: orange; cursor: pointer; color: black"> Randall $199,90</p>
+                        </div>
+                        <div class="item">
+                            <img src="assets/img/Waternoose.jpeg" width="100%" height="100%"></img>
+                            <p style="text-align: center; background: orange; cursor: pointer; color: black"> Dr.Waternoose $99,90</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn')
+        const toggleBtnIcon = document.querySelector('.toggle_btn i')
+        const dropDownMenu = document.querySelector('.dropdown_menu')
+    
+        toggleBtn.onclick = function () {
+         dropDownMenu.classList.toggle('open')
+         const isOpen = dropDownMenu.classList.contains('open')
+    
+         toggleBtnIcon.classList = isOpen 
+         ? 'ph ph-x'
+         : 'ph ph-list'
+         
+        }
+     </script>
+    
+</body>
+
+<script src="https://unpkg.com/@phosphor-icons/web" ></script>
+</html>
+
